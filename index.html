@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Interactivo Integrado</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            width: 80%;
+            max-width: 960px;
+            margin-bottom: 30px;
+        }
+
+        .caja {
+            border: 2px solid blue;
+            padding: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .caja:hover {
+            transform: scale(1.05);
+            border-color: lightblue;
+        }
+
+        .youtube-link a {
+            color: lightblue;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .youtube-link a:hover {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .pdf-viewer iframe {
+            width: 100%;
+            height: 500px;
+        }
+
+        .banner-imagen img {
+            width: 100%;
+            display: block;
+        }
+
+        .descripcion {
+            text-align: center;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Turismo Puracè - Semana Santa 2025</h1>
+    <div class="contenedor">
+        <div class="caja banner-imagen">
+            <h3>Banner</h3>
+            <img src="banner/banner.png" alt="Banner promocional de turismo en Puracé">
+            <p><small>(Hecho por Adrián Guauña)</small></p>
+        </div>
+
+        <div class="caja pdf-viewer">
+            <h3>Documento PDF</h3>
+            <iframe src="mi archivo pdf/Turismo en Pura.pdf" title="Documento sobre turismo en Puracé" frameborder="0"></iframe>
+            <p><small>(Este PDF se puede desplazar dentro de la página)</small></p>
+        </div>
+
+        <div class="caja youtube-link">
+            <h3>Enlace Video de YouTube</h3>
+            <a href="https://youtu.be/EzN-29CuIRY" target="_blank">
+                Ver el Video en YouTube
+            </a>
+            <p><small>(Haz clic para abrir en una nueva pestaña y disfruta del video)</small></p>
+        </div>
+    </div>
+
+    <div class="descripcion">
+        <p>Esta página presenta un banner con efecto interactivo, un documento PDF incrustado y un enlace a YouTube.</p>
+    </div>
+</body>
+</html>
